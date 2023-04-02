@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap');
+
+:root {
+    --font-principal: 'Inter', sans-serif;
+    --bg-pagina: #F0F0F5;
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --vermelho: #e92d3d;
+    --verde: #34CB79;
+    --roxo: #322153;
+}
+
+body {
+    font-size: 16px;
+    color: var(--preto);
+    font-family: var(--font-principal);
+}
+
+header {
+    width: 100vw;
+    background-color: var(--vermelho);
+    color: var(--branco);
+}
+
+.barra-navegacao {
+    width: 70vw;
+    margin: 0 auto;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-size: 29px;
+    font-weight: 800;
+}
+
+.barra-navegacao input {
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    width: 300px;
+    font-size: 18px;
+}
+
+.barra-navegacao input:focus {
+    outline: none;
+}
+
+.opcao-usuario {
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa-solid {
+    margin: 0 10px;
+}
+
+main {
+    position: relative;
+    width: 940px;
+    margin: 3em auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.informacoes-sobre-livro {
+    width: 70%;
+}
+
+.titulo {
+    font-size: 22px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.stars {
+    color: #f5de0c;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.stars:hover {
+    scale: 1.1;
+}
+
+.avaliacao span {
+    font-size: 14px;
+}
+
+.valor-produto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    width: 50%;
+}
+
+#preco {
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.cx-mudar-quantidade {
+    width: 100px;
+    border: 1px solid;
+    padding: 10px 5px;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.botao-mudar-qtd {
+    cursor: pointer;
+}
+
+.botao-mudar-qtd:active {
+    scale: 1.25;
+}
+
+.botoes {
+    width: 55%;
+    margin-top: 2em;
+}
+
+#comprar, #btn-finalizar-compra {
+    width: 97.3%;
+    padding: 15px 0;
+    border: none;
+    background: var(--verde);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--branco);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.opcao-botoes {
+    display: flex;
+}
+
+.opcao-botoes button {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px 0;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    color: var(--branco);
+    cursor: pointer;
+}
+
+#adicionar-carrinho {
+    background: var(--roxo);
+}
+
+#adicionar-favoritos {
+    background: var(--vermelho);
+}
+
+.fa-cart-shopping, .fa-heart {
+    font-size: 18px;
+}
+
+.cx-finalizar-compra {
+    display: none;
+}
+
+#finalizar-compras {
+    position: absolute;
+    top: 15%;
+    right: 30%;
+    border: 2px solid;
+    width: 40%;
+    height: 300px;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--branco);
+    padding: 20px;
+}
+
+.modal {
+    opacity: .1;
+}
+
+.informacoes-produto {
+    width: 400px;
+}
+
+.fechar-modal {
+    cursor: pointer;
+    font-size: 28px;
+    text-align: end;
+    margin-bottom: .5em;
+    display: block;
+}
+
+.informacoes-produto article span {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.informacoes-produto article span p {
+    font-size: 18px;
+    margin: 1em 0;
+}
+
+.cx-preco-limpar {
+    margin: 1em auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.limpar-carrinho {
+    cursor: pointer;
+}
+
+.limpar-carrinho:active {
+    scale: 1.2;
+}
+
+.btn-fechar-modal {
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 500px) {
+    body {
+        width: 100vw;
+        height: 500px;
+    }
+
+    .opcao-usuario {
+        display: none;
+    }
+
+    h1 {
+        font-size: 18px;
+        font-weight: 800;
+        margin-right: 10px;
+    }
+    
+    .barra-navegacao input {
+        border: none;
+        border-radius: 4px;
+        padding: 10px;
+        width: 150px;
+        font-size: 14px;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    main {
+        position: relative;
+        width: 90vw;
+        margin: 3em auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .informacoes-sobre-livro {
+        width: 90vw;
+        margin: 1em auto;
+    }
+
+    .titulo {
+        font-size: 18px;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    .valor-produto {
+        width: 100%;
+    }
+    
+    #preco {
+        font-size: 30px;
+        font-weight: 600;
+        margin-right: 20px;
+    }
+
+    .botoes {
+        width: 100%;
+        margin-top: 2em;
+    }
+
+    #comprar {
+        width: 100%;
+    }
+
+    .opcao-botoes button {
+        margin-right: 0;
+    }
+
+    #adicionar-favoritos {
+        margin-left: 10px;
+    }
+
+    #finalizar-compras {
+        position: absolute;
+        top: 15%;
+        left: 10px;
+        border: 2px solid;
+        width: 90%;
+        height: 300px;
+        margin: 1em auto;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--branco);
+        padding: 5px;
+    }
+
+    .informacoes-produto {
+        width: 80%;
+    }
+
+    .informacoes-produto article span {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.2em;
+    }
+    
+    .informacoes-produto article span p {
+        font-size: 18px;
+        margin: 1em 0;
+    }
+    
+    .cx-preco-limpar {
+        margin: 1em auto;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 20px;
+    }
+    
+    .foto-livro-cx-finalizar-compra {
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    #btn-finalizar-compra {
+        width: 100%;
+        padding: 15px 0;
+        border: none;
+        background: var(--verde);
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--branco);
+        margin-bottom: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

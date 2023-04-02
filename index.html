@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Carrinho de compra</title>
+    <script src="https://kit.fontawesome.com/c5ed4752ba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="barra-navegacao">
+            <h1>Livraria</h1>
+            <input type="text" placeholder="o que você procura? :)">
+            <div class="opcao-usuario">
+                <i class="fa-solid fa-circle-question"></i>
+            </div>
+            <div class="opcao-usuario">
+                <i class="fa-solid fa-phone"></i>
+                <p>
+                    televendas 4004-0000
+                </p>
+            </div>
+            <div class="opcao-usuario">
+                <i class="fa-solid fa-circle-user"></i>
+                <p>
+                    Entre ou cadastre-se
+                </p>
+            </div>
+            <div class="opcao-usuario">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <img src="./img/livro.jpg" alt="Foto do livro hábitos atômicos">
+        <section class="informacoes-sobre-livro">
+            <article>
+                <p class="titulo">
+                    Hábitos atômicos: Um método fácil e comprovado de criar bons
+                    hábitos e se livrar dos maus.
+                </p>
+                <div class="avaliacao">
+                    <i class="fa-regular fa-star stars"></i>
+                    <i class="fa-regular fa-star stars"></i>
+                    <i class="fa-regular fa-star stars"></i>
+                    <i class="fa-regular fa-star stars"></i>
+                    <i class="fa-regular fa-star stars"></i>
+                    <span>(129)</span>
+                </div>
+            </article>
+            <div class="valor-produto">
+                <p>R$<span id="preco"> 51.77</span> </p>
+                <div class="cx-mudar-quantidade">
+                    <i class="fa-solid fa-plus botao-mudar-qtd aumentar-qtd"></i>
+                    <div id="quantidade-produto">1</div>
+                    <i class="fa-solid fa-minus botao-mudar-qtd diminuir-qtd"></i>
+                </div>
+            </div>
+            <div class="botoes">
+                <button id="comprar" type="submit">COMPRAR</button>
+                <div class="opcao-botoes">
+                    <button id="adicionar-carrinho">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        ADICIONAR AO CARRINHO
+                    </button>
+                    <button id="adicionar-favoritos">
+                        <i class="fa-solid fa-regular fa-heart"></i>
+                        ADICIONAR AOS FAVORITOS
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="cx-finalizar-compra">
+        <div id="finalizar-compras">
+            <img src="img/livro.jpg" class="foto-livro-cx-finalizar-compra" alt="Foto livro hábitos atômicos">
+            <div class="informacoes-produto">
+                <div class="btn-fechar-modal">
+                    <i class="fa-solid fa-xmark fechar-modal"></i>
+                </div>
+                <article>
+                    <span>
+                        Hábitos atômicos: Um livro fácil e comprovado de criar bons
+                        hábitos e se livrar dos maus.
+                    </span>
+                    <div class="cx-preco-limpar">
+                        <p>R$ <span id="valor-total-compra"></span></p>
+                        <i class="fa-solid fa-trash-can limpar-carrinho"></i>
+                    </div>
+                </article>
+                <button id="btn-finalizar-compra" type="submit">FINALIZAR COMPRA</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="src/main.js"></script>
+</body>
+
+</html>
